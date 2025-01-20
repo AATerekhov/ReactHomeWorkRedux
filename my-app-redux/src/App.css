@@ -29,18 +29,25 @@ nav.header {
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
-.home,
-.about {
+.homepage,
+.login,
+.register,
+.notfound {
   width: 100%;
   min-height: 100vh;
   padding: 40px 40px;
 }
 
-.home {
+.homepage {
   background-color: #f6f6f6;
 }
 
-.about {
+.register {
+  background-color: #f6f6f6;
+}
+
+.login,
+.notfound {
   background-color: #faf1f7;
 }
 

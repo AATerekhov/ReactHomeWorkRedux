@@ -13,7 +13,16 @@ export const NavBar = () => {
           >
             HomePage
           </NavLink>
-        </li>
+        </li><li>
+          <NavLink
+            to={"login"}
+            className={({ isActive }) => {
+              return isActive ? "active-route" : "";
+            }}
+          >
+            Login
+          </NavLink>
+        </li>  
         <li>
           <NavLink
             to={"register"}
@@ -23,27 +32,7 @@ export const NavBar = () => {
           >
             Register
           </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to={"login"}
-            className={({ isActive }) => {
-              return isActive ? "active-route" : "";
-            }}
-          >
-            Login
-          </NavLink>
-        </li>        
-        <li>
-          <NavLink
-            to={"notfound"}
-            className={({ isActive }) => {
-              return isActive ? "active-route" : "";
-            }}
-          >
-            404
-          </NavLink>
-        </li>
+        </li>              
       </ul>
     </nav>
   );
