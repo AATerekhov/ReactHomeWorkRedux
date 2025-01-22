@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { getByEmail } from '../features/usersSlice';
 import { useNavigate } from 'react-router-dom';
-import './Registration-card.css'
+import './Registration-card.css';
 
 const Login = (() => {
   const [email, setEmail] = useState('');
