@@ -17,7 +17,7 @@ const registerWithLogin = ((props) => {
       
       if (props.isLogin){        
         dispatch(getByEmail({ email, password }));
-        navigate('/');  
+        navigate('/home');  
       } else {
         dispatch(addUser({ name, email, password }));
         navigate('/login');
